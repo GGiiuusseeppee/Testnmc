@@ -1,6 +1,5 @@
 import unittest
-from src.nmc import NMC
-
+from nmc import NMC
 import numpy as np
 
 
