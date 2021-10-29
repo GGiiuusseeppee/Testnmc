@@ -2,7 +2,7 @@ import numpy as np
 from sklearn.metrics import pairwise_distances
 
 
-class NMC(object):
+class NMC:
     """Class implementing the Nearest mean centroid NMC classification algorithm"""
     def __init__(self, robust_est=False):
         self._centroid = None  # init centroid
@@ -21,7 +21,7 @@ class NMC(object):
     def robust_est(self, value):
         if not isinstance(value, bool):
             raise TypeError("value is not bool")
-        self._robust_est = bool(value)
+        self._robust_est = value
 
     def fit(self, x_tr, y_tr):
         """Fit the model to the data(estimating centroids)"""
