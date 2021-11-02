@@ -1,1 +1,2 @@
-# Setting up Testnmc
+# test
+modified from issue #1
