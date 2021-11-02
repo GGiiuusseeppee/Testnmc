@@ -1,6 +1,5 @@
 import numpy as np
-from utils import load_mnist_data, split_data, \
-    plot_ten_digits
+from utils import load_mnist_data, plot_ten_digits
 from nmc import NMC
 from sklearn.model_selection import ShuffleSplit
 x, y = load_mnist_data()
